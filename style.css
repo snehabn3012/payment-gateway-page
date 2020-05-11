@@ -1,0 +1,184 @@
+input {
+    font-size: 12px;
+    border: none;
+    border-radius: 0;
+    border-bottom: solid 1px #e5e5e5;
+    padding: 10px 0px;
+    outline: none;
+    font-size: 18px;
+    letter-spacing: 1.6px;
+    text-align: left;
+    color: #000000;
+    width: 100%;
+    display: block;
+}
+label {
+    font-size: 12px;
+    width: 100%;
+    display: block;
+    letter-spacing: 1.5px;
+}
+
+::placeholder {
+    font-size: 14px;
+    letter-spacing: 0.1px;
+    color: #989898;
+}
+
+
+.card-details-container {
+    margin-top:20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+}
+.input-container1 {
+    margin:20px;
+}
+.row {
+    width: 100%;
+    margin: 10px 0;
+}
+.expiry-cvv-wrapper {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+}
+.expiry {
+    grid-column: 1 / span 2 ;
+}
+
+.visa {
+    background-image: ""
+}
+.card-icon {
+    width: 67px;
+}
+.btn-submit {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    outline: none;
+    background: midnightblue;
+    color: #ffffff;
+    font-size: 14px;
+    letter-spacing: 1.2px;
+}
+
+@media only screen and (min-width: 600px) {   
+   body {
+        margin:auto;
+        width: 25%;
+    }
+  
+}
+html {
+    background: lightblue;
+}
+/* List Container */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+ul li {
+    position: relative;
+}
+.list-container {
+    padding: 20px;
+    margin: 10px;
+    border-radius: 4px;
+    height: 200px;
+    width: 350px;
+    background-image: linear-gradient(#1f0209, #e0cd6d);
+    color: #dcdbdb;
+    font-size: 18px;
+    display: table;
+}
+.card-title {
+    font-size : 18px;
+    vertical-align: top;
+    display: table-row;
+}
+.card-number {
+    font-size : 35px;
+    text-align : center;
+    vertical-align: middle;
+    display: table-row;
+}
+.card-type {
+    vertical-align: bottom;
+    display: table-row;
+    float: right;
+}
+.btn-delete {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    background: none;
+    border: none;
+    outline: none;
+    background: #e8e8d4;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 10px;
+}
+}
+.btn-delete img{
+    width: 35px;
+}
+
+.list-container img {
+    width: 100px;
+}
+/* MODAL CREATION */
+.modal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: table;
+    background-color: rgba(black, 0.7);
+}
+.modal .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 11;
+    background: rgba(0,0,0,0.85);
+}
+.modal .modal-content {
+    position: absolute;
+    width: 600px;
+    top: 50%;
+    left: 50%;
+    z-index: 12;
+    transform: translate(-50%, -50%);
+    max-height: 90%;
+    margin: 0 auto;
+    overflow: auto;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 8px 24px 4px rgba(50, 50, 50, 1);
+}
+.close-icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+}
+.close-icon img {
+    width: 35px;
+}
+/* Error ans success classes*/
+.success-message {
+    color: green;
+}
+.error-message {
+    color: red;
+}
